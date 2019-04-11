@@ -84,10 +84,11 @@ and load balancer configuration.
 ## Monitor for `bootstrap-complete` and Initialization
 
 ```console
-$ bin/openshift-install wait-for bootstrap-complete
+bin/openshift-install user-provided-infrastructure bootstrap-complete
 INFO Waiting up to 30m0s for the Kubernetes API at https://api.test.example.com:6443...
-INFO API v1.12.4+c53f462 up
-INFO Waiting up to 30m0s for the bootstrap-complete event...
+INFO API v1.12.4+6552882 up                       
+INFO Waiting up to 30m0s for the bootstrap-complete event... 
+INFO It is now safe to remove the bootstrap resources 
 ```
 
 ## Destroy Bootstrap Resources
